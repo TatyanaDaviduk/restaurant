@@ -47,10 +47,20 @@ document.querySelectorAll('.input').forEach(function(input){
 //Tab
 
 document.querySelectorAll('.tabs').forEach(function(tabs){
-    const tabsItems = tabs.querySelectorAll('.tabs-nav__item');
-    tabsItems.forEach(item => {
-        item.classList.remove('active');
+    const tabNav = tabs.querySelectorAll('.tabs-nav__item');
+    const tabContent = tabs.querySelectorAll('.tab');
+    tabNav.forEach(item =>{
+        item.addEventListener('click', selectTabNav);
+    });
+
+    function selectTabNav(){
+        tabNav.forEach(item =>{
+            item.classList.remove('active');
+        });
         this.classList.add('active');
-        
-    })
+        let tabName = this.getAttribute('data-tab-name');
+        tabContent.forEach(item => {
+            item.classList.contains(tabName) ? item.classList.add('tab-active') : item.classList.remove('tab-active')
+        })
+    }
 })

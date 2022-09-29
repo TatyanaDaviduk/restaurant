@@ -534,4 +534,44 @@ ul {
   font-family: "Banny";
   font-weight: 700;
   font-size: 18px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* --------------------Events------------------- */
+.events {
+  background: url("../img/specialty's-bg.png");
+}
+.events__container {
+  display: flex;
+  gap: 60px;
+  padding: 100px 0px;
+}
+.events__card {
+  width: 600px;
+}
+
+.events-card__img {
+  position: relative;
+}
+.events-card__title {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-family: "Banny";
+  font-weight: 700;
+  font-size: 24px;
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 18px;
+}
+
+.top-title {
+  top: 0;
+}
+
+.bottom-title {
+  bottom: 0;
+}
+
+/* -------------------/Events----------------- *//*# sourceMappingURL=style.css.map */
