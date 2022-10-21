@@ -544,13 +544,18 @@ ul {
   display: flex;
   gap: 60px;
   padding: 100px 0px;
+  justify-content: space-between;
 }
 .events__card {
   width: 600px;
 }
 
+.events-card {
+  position: relative;
+}
 .events-card__img {
   position: relative;
+  max-width: 475px;
 }
 .events-card__title {
   position: absolute;
@@ -572,6 +577,11 @@ ul {
 
 .bottom-title {
   bottom: 0;
+}
+
+.events-Rcard {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* -------------------/Events----------------- *//*# sourceMappingURL=style.css.map */

@@ -655,6 +655,7 @@ ul{
         display: flex;
         gap: 60px;
         padding: 100px 0px;
+        justify-content: space-between;
     }
     // .events__card
     &__card {
@@ -662,13 +663,16 @@ ul{
     }
 }
 .events-card {
-    
+    position: relative;
     // .events-card__img
     &__img {
         position: relative;
+        max-width: 475px;
+        
     }
     // .events-card__title
     &__title {
+        
         position: absolute;
         background-color: #000;
         color: #fff;
@@ -690,6 +694,12 @@ ul{
 .bottom-title {
 
     bottom: 0;
+}
+
+.events-Rcard{
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 

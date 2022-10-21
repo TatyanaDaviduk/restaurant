@@ -64,3 +64,4 @@ document.querySelectorAll('.tabs').forEach(function(tabs){
         })
     }
 })
+
