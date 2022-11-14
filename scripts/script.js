@@ -1,3 +1,18 @@
+
+const header = document.querySelector('.header');
+
+window.onscroll = () => {
+    if(window.pageYOffset > 50){
+        header.classList.add('__active');
+
+    }
+    else{
+        header.classList.remove('__active');
+
+    }
+}
+
+
 //select
 document.querySelectorAll('.dropdown').forEach(function(dropDownWrapper){
     const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
@@ -64,4 +79,3 @@ document.querySelectorAll('.tabs').forEach(function(tabs){
         })
     }
 })
-
