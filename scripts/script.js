@@ -1,14 +1,22 @@
+const burger = document.querySelector('.burgerMenu');
+const menu = document.querySelector('.header__navigation');
+if(burger&&menu){
+    burger.addEventListener('click', () =>{
+        //burger.classList.toggle('_active');
+        menu.classList.toggle('__active');
+       //body.classList.toggle('_lock');
+    })
+}
 
+//header menu
 const header = document.querySelector('.header');
 
 window.onscroll = () => {
     if(window.pageYOffset > 50){
         header.classList.add('__active');
-
     }
     else{
         header.classList.remove('__active');
-
     }
 }
 
