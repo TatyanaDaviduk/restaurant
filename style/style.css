@@ -245,11 +245,9 @@ input:focus, input -active, textarea:focus, textarea -active {
   }
 }
 .main__container {
-  padding-top: 340px;
+  padding-top: clamp(12.5rem, 3.056rem + 22.22vw, 21.25rem);
   text-align: center;
   position: relative;
-  padding-top: 340px;
-  text-align: center;
 }
 .main__logo {
   position: absolute;
@@ -259,6 +257,11 @@ input:focus, input -active, textarea:focus, textarea -active {
 @media screen and (max-width: 1158px) {
   .main__logo {
     top: 105px;
+  }
+}
+@media screen and (max-width: 9958px) {
+  .main__logo {
+    top: 25px;
   }
 }
 .main__subtitle {
@@ -296,6 +299,11 @@ input:focus, input -active, textarea:focus, textarea -active {
   top: 100px;
   left: 0px;
 }
+@media screen and (max-width: 1076px) {
+  .horizontal_lineL {
+    display: none;
+  }
+}
 .horizontal_lineR {
   content: "";
   width: 530px;
@@ -304,6 +312,11 @@ input:focus, input -active, textarea:focus, textarea -active {
   position: absolute;
   top: 100px;
   right: 0px;
+}
+@media screen and (max-width: 1076px) {
+  .horizontal_lineR {
+    display: none;
+  }
 }
 
 .vertical_lineL {
@@ -314,6 +327,11 @@ input:focus, input -active, textarea:focus, textarea -active {
   top: 102px;
   left: 215px;
 }
+@media screen and (max-width: 1170px) {
+  .vertical_lineL {
+    display: none;
+  }
+}
 .vertical_lineR {
   width: 1px;
   height: calc(100vh - 100px);
@@ -321,6 +339,11 @@ input:focus, input -active, textarea:focus, textarea -active {
   position: absolute;
   top: 102px;
   right: 215px;
+}
+@media screen and (max-width: 1170px) {
+  .vertical_lineR {
+    display: none;
+  }
 }
 
 .buttons {
